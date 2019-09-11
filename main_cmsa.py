@@ -9,7 +9,7 @@ import tensorflow as tf
 import skimage
 
 from CMSA_model import CMSA_model
-#from pydensecrf import densecrf
+from pydensecrf import densecrf
 
 from util import data_reader
 from util.processing_tools import *
@@ -121,7 +121,8 @@ def test(modelname, iter, dataset,  weights, setname, dcrf, mu, tfmodel_folder):
     data_prefix = dataset + '_' + setname
     
     tfmodel_folder = './' + dataset + '/tfmodel/CMSA'
-    pretrained_model = os.path.join(tfmodel_folder, dataset + '_' + weights + '_' + modelname  +  '_iter_' + str(iter) + '.tfmodel')
+
+    pretrained_model = os.path.join(tfmodel_folder, dataset + '_' +  modelname  + '_release' + '.tfmodel')
     
     score_thresh = 1e-9
     eval_seg_iou_list = [.5, .6, .7, .8, .9]
