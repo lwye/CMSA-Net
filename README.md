@@ -22,7 +22,9 @@ Partial coda and data preparation are borrowed from [TF-phrasecut-public](https:
 
 ## Sample code
 ### Training
-```python main_cmsa.py -m train -w deeplab -d Gref -t train -g 0 -i 800000```
+```
+python main_cmsa.py -m train -w deeplab -d Gref -t train -g 0 -i 800000
+```
 
 
 ### Testing 
