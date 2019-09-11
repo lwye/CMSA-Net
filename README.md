@@ -31,4 +31,4 @@ python main_cmsa.py -m train -w deeplab -d Gref -t train -g 0 -i 800000
 ```
 python main_cmsa.py -m test -w deeplab -d Gref -t val -g 0 -i 800000
 ```
-A trained model is available [here](https://drive.google.com/open?id=1LdqQnOozO9553MIl14gwglkBXWIXXUzz). You should be able to produce results on Gref validation dataset as 39.97 (without CRF) in terms of IoU.
+A trained model is available [here](https://drive.google.com/open?id=1LdqQnOozO9553MIl14gwglkBXWIXXUzz). You should be able to produce results on Gref validation dataset as 39.96% / 40.07% (without/with CRF) in terms of IoU.
